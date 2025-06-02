@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 24px;
+}
+
+ body {
+  background-image: url('NoSabo.jpg'); /* Caminho da imagem */
+  background-size: cover;       /* Preenche a tela inteira */
+  background-repeat: no-repeat; /* Não repete a imagem */
+  background-position: center;  /* Centraliza a imagem */
+}
+
+<div class="imagem-container">
+
+    <img src="https://via.placeholder.com/150/00f/fff?text=Esquerda" alt="Imagem Esquerda">
+    <img src="https://via.placeholder.com/150/0ff/000?text=Centro" alt="Imagem Centro">
+    <img src="https://via.placeholder.com/150/f00/fff?text=Direita" alt="Imagem Direita">
+  </div>

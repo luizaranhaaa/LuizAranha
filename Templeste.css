@@ -1,0 +1,124 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2d2d2d;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #111;
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+header .logo h1 {
+    font-size: 3rem;
+    color: #ff5722;
+    margin-bottom: 10px;
+}
+
+header .logo p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Seção principal com os jogos */
+.game-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+/* Cartões de jogos */
+.game-card {
+    background-color: #333;
+    border-radius: 10px;
+    width: 30%;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #ff5722;
+}
+
+.game-card h2 {
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
+    color: #ff5722;
+}
+
+.game-card p {
+    font-size: 1rem;
+    color: #ccc;
+    padding: 0 10px;
+}
+
+/* Efeito de hover nos cartões de jogo */
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .game-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 2.5rem;
+    }
+
+    header .logo p {
+        font-size: 1rem;
+    }
+
+    .game-card h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.site-header {
+    text-align: center;
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 40px 20px;
+    border-bottom: 5px solid #00ffd5;
+}
+
+.site-header h1 {
+    font-size: 3em;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.site-header .subtitle {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-style: italic;
+    color: #c0eaff;
+}
